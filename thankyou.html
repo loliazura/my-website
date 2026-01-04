@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION -->
+<header class="top">
+    <h1 class="home-title">Thank You</h1>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <!-- NAV BUTTONS -->
+    <nav class="nav-buttons">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="gallery1.html">My Gallery 1</a>
+        <a href="gallery2.html">My Gallery 2</a>
+        <a href="contact.html">Contact</a>
+        <a href="thankyou.html" class="active">Thank You</a>
+    </nav>
+</header>
+
+<hr class="divider">
+
+    <!-- ICONS -->
+ <div class="top-socials">
+    <div class="icons">
+        <img src="facebook.png">
+        <img src="twitter.png">
+        <img src="instagram.png">
+    </div>
+    <span>© Vianne Myles Amano</span>
+</div>
+
+    <!-- TEXT -->
+<section class="thankyou-section">
+
+    <div class="thankyou-content">
+        <span class="script-text">Thanks for</span>
+        <span class="visit-text">VISITING</span>
+    </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

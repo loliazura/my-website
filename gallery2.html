@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="top">
+        <h1 class="page-title">My Gallery 2</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- NAV BUTTONS -->
+        <nav class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery1.html">My Gallery 1</a>
+            <a href="gallery2.html" class="active">My Gallery 2</a>
+            <a href="contact.html">Contact</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+<hr class="divider">
+
+<section class="gallery-section">
+
+    <!-- FRIENDS -->
+    <div class="gallery-row large">
+        <img src="friends1.jpg">
+        <img src="friends2.jpg">
+    </div>
+
+    <!-- ART SKETCHES -->
+    <div class="polaroid-row tilted">
+        <div class="polaroid"><img src="art1.jpg"></div>
+        <div class="polaroid"><img src="art2.jpg"></div>
+        <div class="polaroid"><img src="art3.jpg"></div>
+    </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="top">
+        <h1 class="home-title">About Me</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- NAV BUTTONS -->
+        <nav class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery1.html">My Gallery 1</a>
+            <a href="gallery2.html">My Gallery 2</a>
+            <a href="contact.html">Contact</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <hr class="divider">
+
+    <!-- ABOUT SECTION -->
+    <section class="about-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="about-left">
+
+            <div class="about-name-wrapper">
+                <h1 class="about-name">VIANNE MYLES</h1>
+                <span class="signature">Amano</span>
+            </div>
+
+
+            <div class="about-box">
+                <p>✦ Hi! I’m a college student just trying to survive deadlines. I’m passionate about learning, and improving myself.</p>
+
+                <p>✦ I’m a big cat person. I have four adorable babies—Dina, Onyx, Misoo, and Toppy. They keep me company when I study, draw, or just need a break from everything.</p>
+
+                <p>✦ I enjoy listening to music, especially when I want to clear my mind.</p>
+
+                <p>✦ I can draw, and I really love artworks. Creativity makes me feel alive, and it’s one of the ways I express myself.</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-right">
+
+            <div class="photo-grid">
+
+                <img src="about-portrait.jpg" class="grid-large" alt="Portrait">
+
+                <img src="cat1.jpg" alt="Cat 1">
+                <img src="cat2.jpg" alt="Cat 2">
+                <img src="cat3.jpg" alt="Cat 3">
+                <img src="cat4.jpg" alt="Cat 4">
+
+                <img src="drawings.jpg" class="grid-wide" alt="Drawings">
+                <img src="place.jpg" alt="Place">
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

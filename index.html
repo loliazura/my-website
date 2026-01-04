@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="top">
+        <h1 class="home-title">Home</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- NAV BUTTONS -->
+        <nav class="nav-buttons">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery1.html">My Gallery 1</a>
+            <a href="gallery2.html">My Gallery 2</a>
+            <a href="contact.html">Contact</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <hr class="divider">
+
+    <!-- WELCOME TEXT -->
+    <div class="welcome-box">
+        Welcome to my little corner of the world.
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <section class="main">
+
+        <!-- LEFT BACKGROUND -->
+        <div class="bg left-bg"></div>
+
+        <!-- CENTER -->
+        <div class="center-bg">
+            <!-- BACK TEXT -->
+                <h2 class="name-text back-text">MYLES</h2>
+
+            <!-- PORTRAIT -->
+                <img src="portrait.png" class="portrait" alt="Portrait">
+
+            <!-- OUTLINE TEXT -->
+                <h2 class="name-text outline-text">MYLES</h2>
+        </div>
+
+        <!-- RIGHT BACKGROUND -->
+        <div class="bg right-bg"></div>
+
+    </section>
+
+    <!-- BUTTONS -->
+    <div class="page-buttons">
+        <a href="about.html">About Me</a>
+        <a href="gallery1.html">My Gallery 1</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

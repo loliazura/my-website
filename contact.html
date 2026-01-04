@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="top">
+        <h1 class="page-title">Contact</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- NAV BUTTONS -->
+        <nav class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery1.html">My Gallery 1</a>
+            <a href="gallery2.html">My Gallery 2</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+<hr class="divider">
+
+<!-- BIG TEXT -->
+<section class="contact-hero">
+    <h2 class="reach-text">REACH ME?</h2>
+</section>
+
+<!-- MAIN CONTACT AREA -->
+<section class="contact-main">
+
+    <!-- LEFT BOX -->
+    <div class="contact-box">
+        <p><span>📍</span> #266 Zone 1, Rosales, Pangasinan</p>
+        <p><span>📱</span> 09064080517</p>
+        <p><span>✉️</span> amanomyles@gmail.com</p>
+
+        <div class="socials">
+            <span>ⓕ</span>
+            <span>ⓣ</span>
+            <span>ⓘ</span>
+        </div>
+
+        <p class="copyright">
+            © Vianne Myles Amano
+        </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="contact-image">
+        <img src="me.png" alt="Portrait">
+    </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

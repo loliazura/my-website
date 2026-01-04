@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="top">
+        <h1 class="home-title">My Gallery 1</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- NAV BUTTONS -->
+        <nav class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery1.html" class="active">My Gallery 1</a>
+            <a href="gallery2.html">My Gallery 2</a>
+            <a href="contact.html">Contact</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <hr class="divider">
+
+   <section class="gallery-section">
+
+    <!-- TOP ROW -->
+    <div class="gallery-row">
+        <img src="resort1.jpg">
+        <img src="resort2.jpg">
+        <img src="resort3.jpg">
+        <img src="arcade1.jpg">
+        <img src="arcade2.jpg">
+        <img src="arcade3.jpg">
+    </div>
+
+    <!-- BOTTOM ROW (POLAROIDS) -->
+    <div class="polaroid-row">
+        <div class="polaroid"><img src="onyx.jpg"></div>
+        <div class="polaroid"><img src="toppy.jpg"></div>
+        <div class="polaroid"><img src="misoo.jpg"></div>
+        <div class="polaroid"><img src="dina.jpg"></div>
+    </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>        
+</body>
+</html>

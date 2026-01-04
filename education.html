@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="top">
+        <h1 class="home-title">Education</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- NAV BUTTONS -->
+        <nav class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="gallery1.html">My Gallery 1</a>
+            <a href="gallery2.html">My Gallery 2</a>
+            <a href="contact.html">Contact</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <hr class="divider">
+
+    <!-- EDUCATION SECTION -->
+    <section class="education-container">
+
+        <!-- LEFT -->
+        <div class="education-left">
+
+            <h2 class="edu-title">EDUCATION</h2>
+
+            <p class="edu-school">
+                Pangasinan State University – Urdaneta City Campus<br>
+                <span>2025 – Present</span>
+            </p>
+
+            <div class="edu-box">
+                <h3>Bachelor of Science in Information Technology</h3>
+
+                <p>
+                    My education has been one of the biggest parts of my growth.
+                    Being in college taught me the importance of staying mentally
+                    grounded, especially when balancing academics with personal
+                    hobbies like drawing and taking care of my cats.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="education-right">
+
+           <div class="edu-image-wrapper">
+             <img src="psu.jpg" class="edu-image" alt="PSU Campus">
+             <img src="psu-logo.png" class="edu-logo" alt="PSU Logo">
+            </div>
+
+            <div class="edu-quote">
+                “Knowledge becomes meaningful when you understand why it matters.”
+        </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-buttons').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
